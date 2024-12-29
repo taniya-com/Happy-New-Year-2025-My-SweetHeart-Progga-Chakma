@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Princess, Video for You🥰</title>
+    <script>
+    function startRedirect() {
+      setTimeout(() => {
+        alert("I really love you Progga Chakma ( Sona )");
+        window.location.href = "index.html"; // Replace with your URL
+      }, 79000); // 90 seconds in milliseconds
+    }
+  </script>
   <style>
     body{
       background: black;
@@ -32,8 +40,13 @@ video{
 </head>
 
 <body>
-  <a href="index.html"><input value="Go To Home" type="button"></a>
+  <a href="index.html"><input value="Happy New year 2025" type="button"></a>
   <video id="princessVdo" controls src="princess.mp4"></video>
+    <script>
+    // Trigger redirection when the video starts playing
+    const video = document.getElementById('princessVdo');
+    video.addEventListener('play', startRedirect);
+  </script>
 </body>
 
 </html>
